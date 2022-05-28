@@ -8,16 +8,16 @@ spring:
         dialect: org.hibernate.dialect.MySQL5InnoDBDialect
         show_sql: true
         format_sql: true
-#  datasource:
-#    hikari:
-#      jdbc-url: jdbc:h2:mem://localhost/~/testdb;MODE=MYSQL
+  datasource:
+    hikari:
+      jdbc-url: jdbc:h2:mem://localhost/~/testdb;MODE=MYSQL
 
   h2:
     console:
       enabled: true
 
   profiles:
-    include: oauth
+    include: oauth, read-db, real
 
   session:
     store-type: jdbc
