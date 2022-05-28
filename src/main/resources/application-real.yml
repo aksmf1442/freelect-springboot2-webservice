@@ -6,3 +6,4 @@ spring:
 
   session:
     store-type: jdbc
+
