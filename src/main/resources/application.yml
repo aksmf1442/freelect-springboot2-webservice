@@ -4,7 +4,6 @@ spring:
       ddl-auto: create
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
         show_sql: true
         format_sql: true
   datasource:
@@ -16,7 +15,7 @@ spring:
       enabled: true
 
   profiles:
-    include: oauth
+    include: real
 
   session:
     store-type: jdbc
