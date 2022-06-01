@@ -42,10 +42,10 @@ jobs:
       - name: Generate deployment package # (1)
         run: |
           mkdir -p deploy
-          cp build/libs/*.jar deploy
+          cp build/libs/*.jar deploy/
           cp Procfile deploy
-          cp -r .ebextensions deploy
-          cp -r .platform deploy
+          cp -r .ebextensions deploy/
+          cp -r .platform deploy/
           cd deploy && zip -r deploy.zip .
 
       - name: Deploy to EB # (2)
