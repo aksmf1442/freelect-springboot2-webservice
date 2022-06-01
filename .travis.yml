@@ -1,6 +1,6 @@
 language: java
 jdk:
-  - openjdk11.0.11
+  - zulu11.31.11-ca-fx-jdk11.0.10-linux_x64
 
 branches:
   only:
