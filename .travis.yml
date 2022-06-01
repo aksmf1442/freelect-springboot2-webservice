@@ -16,7 +16,7 @@ script: "./gradlew clean build"
 before_deploy:
   - zip -r freelect-springboot2-webservice *
   - mkdir -p deploy
-  - mv freelect-springboot2-webservice.zip deploy/freelect-springboot2-webserivce.zip
+  - mv freelect-springboot2-webservice.zip deploy/freelect-springboot2-webservice.zip
 
 deploy:
   - provider: s3
